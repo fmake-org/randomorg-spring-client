@@ -2,14 +2,29 @@ plugins {
     id 'java-library'
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group = 'org.fmake'
+version = '0.1.0'
+
+jar {
+    manifest {
+        attributes('Implementation-Title' : project.name,
+                   'Implementation-Version' : project.version)
+    }
+}
+
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
     api 'org.apache.commons:commons-math3:3.6.1'
-    implementation 'com.google.guava:guava:27.0.1-jre'
-
+    api 'org.springframework.boot:spring-boot:2.1.4.RELEASE'
+    implementation 'org.springframework:spring-web:5.1.6.RELEASE'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.4.2'
 }
 
