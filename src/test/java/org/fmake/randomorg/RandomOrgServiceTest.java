@@ -5,9 +5,7 @@ import org.fmake.randomorg.model.randomorg.RandomObject;
 import org.fmake.randomorg.model.randomorg.RandomOrgRequest;
 import org.fmake.randomorg.model.randomorg.RandomOrgResponse;
 import org.fmake.randomorg.model.randomorg.ResultObject;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
@@ -18,9 +16,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.web.client.RestTemplate;
 
-import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
-import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
