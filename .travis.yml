@@ -8,4 +8,5 @@ addons:
       secure: $SONAR_TOKEN
 script:
   - ./gradlew assemble
+  - ./gradlew jacocoTestReport
   - sonar-scanner

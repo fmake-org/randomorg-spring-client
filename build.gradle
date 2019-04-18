@@ -65,3 +65,5 @@ compileJava.dependsOn(copyDependencies)
 test {
     useJUnitPlatform()
 }
+
+jacocoTestReport.reports.xml.enabled = true
