@@ -7,4 +7,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "randomorg")
 class ClientProperties {
     private String baseUri;
+    private String endpoint;
+    private String apiKey;
 }
