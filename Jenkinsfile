@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'openjdk:13-jdk-alpine'
+          image 'openjdk:11-jdk-slim'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Test') {
       agent {
         docker {
-          image 'openjdk:13-jdk-alpine'
+          image 'openjdk:11-jdk-slim'
         }
 
       }
