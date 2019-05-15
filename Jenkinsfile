@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    RANDOMORG_APIKEY = credentials('randomorg-api-key')
+  }
   stages {
     stage('Build') {
       agent {
